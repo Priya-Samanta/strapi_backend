@@ -14,6 +14,8 @@ module.exports = [
  {
      name: "strapi::security",
      config: {
+      origin : ['https://strapi-bs-cxmn.vercel.app/'],
+      methods : ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
        contentSecurityPolicy: {
         directives: {
            "script-src": ["'self'", "editor.unlayer.com"],
